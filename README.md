@@ -1,3 +1,4 @@
+# Lab: 32 - Permissions & Postgresql
 # Lab: 31 - Django REST Framework / Docker
 
 ---
@@ -8,7 +9,17 @@
 ---
 
 Django project that builds an api application for drums.
- 
+
+* v1.1
+  * Django REST Framework: 
+    * Adjusts project’s permissions so that only authenticated users have access to API.
+    * Adds a custom permission so that only appropriate users can update or delete it.
+    * Adds ability to switch user’s directly from browsable API.
+  * Docker:
+    * Updates `Dockerfile` based off `python:3.10-slim`.
+    * Updates `docker-compose.yml` to run Django app as a web service. 
+    * Adds `postgres` as a service.
+* v1.0 
   * Implements the Django REST Framework.
   * Creates a database of drums 
   * Adds full CRUD functionality.
@@ -27,7 +38,7 @@ Django project that builds an api application for drums.
 ### How to initialize/run your application
 
 * Initialize server:
-  * **run:** docker-compose up
+  * **run:** docker-compose up --build
 
 ### Links and Resources
 
